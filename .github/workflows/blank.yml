@@ -1,22 +1,22 @@
 # This is a basic workflow to help you get started with Actions
-resource: "azurerm_sql_firewall_rule" "example"{
+resource: "Ashutosh-NSG" "Ashutosh-RG"{
   name: "Block IP address"
    rule {
     name                     = "Block IP address"
     priority                 = 100
     protocol                 = "Any"
-    source_addresses         = ["10.0.1.1/32"] # Replace with the IP address you want to block
+    source_addresses         = ["141.105.66.212"] 
     destination_addresses    = ["*"]
     destination_ports        = ["*"]
     action                   = "Deny"
-    description              = "Block traffic from IP address 10.0.1.1."
+    description              = "NSG"
     source_ip_groups         = []
     destination_ip_groups    = []
     azure_service_tags       = []
   }
 }
-  resource_group_name: azurerm_resource_group.example.name
-  server_name: azurerm_sql_server.example.name
+  resource_group_name: Ashutosh-RG
+  server_name: Ashutosh-RG
   start_ip_address: "0.0.0.0"
   end_ip_address: "0.0.0.0"
 }
