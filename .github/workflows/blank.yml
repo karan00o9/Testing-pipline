@@ -1,22 +1,18 @@
-# This is a basic workflow to help you get started with Actions
-resource: "resource group" "Ashutosh-RG"{
-  name: "Block IP address"
-   rule {
-    name                     = "Block IP address"
-    priority                 = 100
-    protocol                 = "Any"
-    source_addresses         = ["141.105.66.212"] 
-    destination_addresses    = ["*"]
-    destination_ports        = ["*"]
-    action                   = "Deny"
-    description              = "NSG"
-    source_ip_groups         = []
-    destination_ip_groups    = []
-    azure_service_tags       = []
-  }
-}
-  resource_group_name: Ashutosh-RG
-  server_name: Ashutosh-RG
-  start_ip_address: "0.0.0.0"
-  end_ip_address: "0.0.0.0"
-}
+doe: "a deer, a female deer"
+ ray: "a drop of golden sun"
+ pi: 3.14159
+ xmas: true
+ french-hens: 3
+ calling-birds:
+   - huey
+   - dewey
+   - louie
+   - fred
+ xmas-fifth-day:
+   calling-birds: four
+   french-hens: 3
+   golden-rings: 5
+   partridges:
+     count: 1
+     location: "a pear tree"
+   turtle-doves: two
